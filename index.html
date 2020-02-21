@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jukebox</title>
+    <script type="js/app.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+  <h2>Add a song:</h2>
+    </div>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+
+        <div class="form-item">
+          <label for="song-title" class="primary">Song Title</label>
+          <input type="text" id="song-title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="artist" class="primary">Artist</label>
+          <input type="text" id="artist" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="genre" class="primary">Genre</label>
+          <select id="genre">
+            <option value="" disabled selected></option>
+            <option value="Rock">Rock</option>
+            <option value="Pop"></option>
+            <option value="Indie"></option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h3>Your tracks:</h3>
+    <ul id="track-list"></ul>
+
+  </body>
+</html>
